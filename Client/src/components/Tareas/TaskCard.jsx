@@ -17,7 +17,7 @@ export const TaskCard = ({task}) => {
   };
 
   return (
-    <div>
+    <div className=' bg-slate-600 w-96 h-14 px-2 py-3 rounded-md flex justify-between m-2'>
         <h1>{task.title}</h1>
         <button onClick={() => handleDeleteTask()}>Eliminar</button>
     </div>

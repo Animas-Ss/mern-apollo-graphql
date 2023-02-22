@@ -23,8 +23,8 @@ export const TaskForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-        <input type='text' name="title" placeholder='agregar tarea'/>
-        <button type='submit'>Agregar</button>
+        <input type='text' name="title" placeholder='agregar tarea' className='bg-zinc-900 text-white rounded-lg mb-2 p-2 w-full'/>
+        <button type='submit' className='bg-sky-900 text-white w-full p-2 rounded-lg'>Agregar</button>
     </form>
   )
 }

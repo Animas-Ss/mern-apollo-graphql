@@ -38,10 +38,10 @@ export const ProjectsForm = () => {
 
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" name="name" placeholder="Escribe una titulo" onChange={handleChange} />
-      <textarea name="description" rows="3" placeholder="white a description" onChange={handleChange}></textarea>
-      <button type="submit" disabled={!project.name || !project.description || loading}>Guardar</button>
+    <form onSubmit={handleSubmit} className=" w-2/5">
+      <input type="text" name="name" placeholder="Escribe una titulo" onChange={handleChange} className=" bg-zinc-800 rounded-lg p-4 block w-full mb-3 "/>
+      <textarea name="description" rows="3" placeholder="white a description" onChange={handleChange} className="bg-zinc-800 rounded-lg block w-full mb-3"></textarea>
+      <button type="submit" disabled={!project.name || !project.description || loading} className=" bg-blue-500 px-4 py-1 text-lg mb-3 disabled:bg-zinc-400">Guardar</button>
     </form>
   )
 }
